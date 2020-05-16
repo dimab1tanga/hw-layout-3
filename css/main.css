@@ -1,0 +1,197 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --title-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-bgd-color: #e5e5e5;
+  --secondary-bgd-color: #ffffff;
+}
+body {
+  background-color: var(--primary-bgd-color);
+  color: #2a2a2a;
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.head {
+  background-color: var(--secondary-bgd-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.studio {
+  color: var(--primary-text-color);
+}
+
+/* колір основного тексту #212121 */
+/* колір вториного тескту #757575 */
+/* колір тексту в кінці rgba(255, 255, 255, 0.4); */
+/* колір фону шапки #FFFFFF */
+/* колір фону переваг #E5E5E5/колір фону іконок #F5F4FA */
+/* колір фону нашої команди #F5F4FA */
+/* колір фону футера #2F303A */
+/* колір акценту #2196F3 */
+
+/* Site nav */
+.site-nav .link,
+.contacts-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .contacts-link:hover,
+.site-nav .contacts-link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+.order-service {
+  background-color: #2196f3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-decoration: none;
+}
+
+/* Features */
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.features-description {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Work */
+.activity-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.work-title {
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+/* Team */
+.team {
+  background-color: #f5f4fa;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.name-player {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-players {
+  background-color: #ffffff;
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.player-links {
+  background-color: #ffffff;
+}
+.player-links .link:hover,
+.player-links .link:focus {
+  color: var(--accent-color);
+}
+.link {
+  text-decoration: none;
+}
+
+/* Clients */
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.client-links .link:hover,
+.client-links .link:focus {
+  color: var(--accent-color);
+}
+
+/* Footer */
+.logo-footer {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.19;
+}
+.location {
+  color: var(--primary-text-color);
+  font-style: normal;
+  text-decoration: none;
+}
+.contacts {
+  color: var(--primary-text-color);
+  font-style: normal;
+  text-decoration: none;
+}
+.social-links .link:hover,
+.social-links .link:focus {
+  color: var(--accent-color);
+}
+.sign-up {
+  background-color: #2196f3;
+  color: #ffffff;
+  text-decoration: none;
+}
+.goit {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}
+
+/* Button */
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+}
