@@ -7,19 +7,24 @@
   --secondary-bgd-color: #ffffff;
 }
 .body {
-  background-color: #e5e5e5;
+  background-color: var(--primary-bgd-color);
 }
 
 /* Кнопка */
 
 .button {
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: var(--primary-text-color);
-  background-color: #f5f4fa;
+  border-radius: 4px;
 }
-
+button:hover,
+button:focus {
+  background-color: var(--accent-color);
+  color: #f5f4fa;
+}
 a {
   text-decoration: none;
 }
