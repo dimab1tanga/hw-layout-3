@@ -23,12 +23,27 @@ html {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1230px;
+  height: 80px;
+  left: 200px;
+  top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: tomato;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 0px; */
+}
+
 .head {
   background-color: var(--secondary-bgd-color);
 }
 
 ul {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .logo {
@@ -65,6 +80,12 @@ ul {
   color: var(--accent-color);
 }
 
+.contacts-link {
+  min-width: 130px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -93,9 +114,13 @@ ul {
   color: var(--accent-color);
 }
 .sign-up {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
   text-decoration: none;
+  font-weight: 900;
+  padding: 10px 35px;
+  text-align: center;
+  border-radius: 4px;
 }
 .goit {
   font-weight: 400;
