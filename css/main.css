@@ -107,6 +107,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .features-description {
   color: #757575;
@@ -117,8 +118,10 @@ ul {
 
 /* Work */
 .work {
-  margin-top: 94px;
+  margin-top: 0px;
   margin-bottom: 50px;
+
+  background-color: orange;
 }
 .activity-title {
   font-weight: 700;
@@ -132,6 +135,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 
 /* Team */
@@ -168,6 +172,9 @@ ul {
 }
 
 /* Clients */
+.client {
+  background-color: greenyellow;
+}
 .client-title {
   font-weight: 700;
   font-size: 36px;
