@@ -6,6 +6,17 @@
   --primary-bgd-color: #e5e5e5;
   --secondary-bgd-color: #ffffff;
 }
+
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
 body {
   background-color: var(--primary-bgd-color);
   color: var(--primary-text-color);
@@ -13,7 +24,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.head {
+.header {
   background-color: var(--secondary-bgd-color);
 }
 
@@ -49,6 +60,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  margin-top: 0px;
 }
 
 .site-nav .link:hover,
@@ -64,17 +76,29 @@ ul {
   color: var(--accent-color);
 }
 
+.container {
+  margin-top: 0px;
+}
+
 /* Hero */
 .hero {
   background-color: rgba(47, 48, 58, 0.8);
-  height: 600px;
+  /* height: 600px; */
+  margin-top: 0px;
+  margin-bottom: 6px;
   text-align: center;
-  margin-bottom: 0px;
+  outline: 3px solid orchid;
 }
 .hero-title {
-  margin-top: 20px;
-  margin-bottom: 46px;
-  background-color: pink;
+  /* margin-bottom: 46px; */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 200px;
+  padding-right: 477px;
+  padding-bottom: 46px;
+  padding-left: 477px;
+  /* background-color: green; */
+  /* outline: 3px solid green; */
   color: var(--title-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -93,41 +117,94 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   text-align: center;
+  margin-top: 0px;
+  margin-left: 700px;
+  margin-right: 700px;
+  margin-bottom: 200px;
 }
 
 /* Features */
+.is-hidden {
+  display: none;
+}
 .features {
-  margin-bottom: 94px;
+  background-color: #e5e5e5;
+  margin-top: 0px;
+  /* padding-top: 1px;
+  padding-bottom: 1px; */
   text-align: center;
-  background-color: plum;
+  outline: 3px solid blue;
 }
 
 .features-title {
-  padding-top: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* padding-top: 94px; */
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+
+.features-title-item {
+  padding-top: 0px;
+}
+
+.features-title-item:first-child {
+  padding-top: 94px;
+}
+
 .features-description {
   color: #757575;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
+
+.features-description-item {
+  padding-bottom: 0px;
+}
+
+.features-description-item:last-child {
+  padding-bottom: 94px;
+}
+
+.features-description-item {
+  margin-bottom: 6px;
+}
+
+.features-list > h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Border */
+/* .border {
+  width: 1170px;
+  height: 0px;
+  left: 215px;
+  top: 1119px;
+  border: 1px solid #ececec;
+} */
 
 /* Work */
 .work {
+  background-color: #e5e5e5;
   margin-top: 0px;
-  margin-bottom: 50px;
-
-  background-color: orange;
+  margin-bottom: 0px;
+  /* padding-top: 20px; */
+  outline: 3px solid orange;
 }
+
 .activity-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .work-title {
   background-color: rgba(47, 48, 58, 0.8);
@@ -136,17 +213,38 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+
+.work-list > h3 {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.work-title-item {
+  margin-bottom: 6px;
+}
+
+.work-title-item:last-child {
+  margin-bottom: 0px;
 }
 
 /* Team */
 .team {
   background-color: #f5f4fa;
+  outline: 3px solid teal;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 6px;
 }
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 .name-player {
   font-weight: 500;
@@ -154,15 +252,12 @@ ul {
   line-height: 1.19;
 }
 .team-players {
-  background-color: #ffffff;
   color: #757575;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
-.player-links {
-  background-color: #ffffff;
-}
+
 .player-links .link:hover,
 .player-links .link:focus {
   color: var(--accent-color);
@@ -172,21 +267,39 @@ ul {
 }
 
 /* Clients */
-.client {
-  background-color: greenyellow;
+.clients {
+  background-color: #e5e5e5;
+  outline: 3px solid red;
+  margin-top: 0px;
 }
 .client-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0px;
 }
+
+/* .clients-list {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.client-links {
+  margin-top: 0px;
+  padding-top: 0px;
+} */
+
 .client-links .link:hover,
 .client-links .link:focus {
   color: var(--accent-color);
 }
 
 /* Footer */
+/* .footer {
+  background-color: #2f303a;
+} */
+
 .logo-footer {
   font-weight: 700;
   font-size: 22px;

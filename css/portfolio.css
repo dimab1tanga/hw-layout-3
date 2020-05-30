@@ -6,8 +6,39 @@
   --primary-bgd-color: #e5e5e5;
   --secondary-bgd-color: #ffffff;
 }
+
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
 .body {
   background-color: var(--primary-bgd-color);
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.nav-box {
+  outline: 3px solid blue;
+  margin-bottom: 6px;
+}
+
+.main {
+  outline: 3px solid sandybrown;
+  margin-top: 0px;
+}
+
+p {
+  /* margin-top: 0px; */
+  margin-bottom: 0px;
 }
 
 /* Кнопка */
