@@ -48,7 +48,7 @@ ul {
 .nav-container {
   display: flex;
   align-items: center;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 3px solid tomato;
@@ -121,6 +121,8 @@ ul {
 
 .footer {
   /* background-color: #2f303a; */
+  outline: 3px solid black;
+  margin-top: 0px;
 }
 .logo-footer {
   font-weight: 700;
