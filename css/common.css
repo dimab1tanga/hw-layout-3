@@ -141,6 +141,7 @@ ul {
 
 .contacts-box {
   color: var(--title-text-color);
+  margin-bottom: 28px;
 }
 
 .logo-footer {
@@ -150,7 +151,6 @@ ul {
   font-weight: 700;
   font-size: 22px;
   line-height: 1.19;
-  margin-bottom: 10px;
 }
 
 .web-logo {
@@ -164,10 +164,22 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
-  margin-bottom: 10px
+  margin-top: 10px;
+  margin-bottom: 9px;
 }
 
-.contacts {
+.contacts-mail {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: roboto, cursive;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+
+.contacts-tel {
   color: rgba(255, 255, 255, 0.6);
   font-family: roboto, cursive;
   font-style: normal;
