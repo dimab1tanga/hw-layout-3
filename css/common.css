@@ -194,6 +194,17 @@ ul {
   margin-left: 69px;
 }
 
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.usually-hidden {
+  display: none;
+}
+
 .social-links .link:hover,
 .social-links .link:focus {
   color: var(--accent-color);

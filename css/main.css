@@ -398,40 +398,7 @@ p {
 }
 
 /* Footer */
-/* .footer {
-  background-color: #2f303a;
-} */
 
-/* .logo-footer {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.19;
-}
-.location {
-  
-  font-style: normal;
-  text-decoration: none;
-}
-.contacts {
-  
-  font-style: normal;
-  text-decoration: none;
-}
-.social-links .link:hover,
-.social-links .link:focus {
-  color: var(--accent-color);
-}
-.sign-up {
-  background-color: #2196f3;
-  color: #ffffff;
-  text-decoration: none;
-}
-.goit {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-}
 
 /* Button */
 .button {
