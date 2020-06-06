@@ -24,7 +24,7 @@ h1 {
 .box-button {
   display: flex;
   justify-content: center;
-  outline: 3px solid blue;
+  /* outline: 3px solid blue; */
   margin-bottom: 6px;
 }
 
@@ -51,7 +51,7 @@ button:focus {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 3px solid sandybrown;
+  /* outline: 3px solid sandybrown; */
   margin-top: 0px;
   margin-bottom: 6px;
 }
@@ -65,7 +65,7 @@ button:focus {
 .list-element {
   /* width: calc((100% - 2 * 30px) / 3); */
   width: 370px;
-  background-color: tomato;
+  /* background-color: tomato; */
   margin-right: 30px;
   margin-bottom: 30px;
 }

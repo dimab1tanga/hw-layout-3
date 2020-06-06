@@ -87,7 +87,7 @@ ul {
   margin-top: 0px;
   margin-bottom: 6px;
   text-align: center;
-  outline: 3px solid orchid;
+  /* outline: 3px solid orchid; */
 }
 .hero-title {
   /* margin-bottom: 46px; */
@@ -141,7 +141,7 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid black;
+  /* outline: 2px solid black; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -231,7 +231,7 @@ p {
 }
 
 .work-container {
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -288,7 +288,7 @@ p {
 }
 
 .team-container {
-  outline: 2px solid gold;
+  /* outline: 2px solid gold; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -357,13 +357,13 @@ p {
 /* Clients */
 .clients {
   background-color: #e5e5e5;
-  outline: 3px solid red;
+  /* outline: 3px solid red; */
   margin-top: 0px;
   margin-bottom: 6px;
 }
 
 .clients-container {
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -387,10 +387,10 @@ p {
   padding-top: 0px; */
 }
 
-.clients-list {
-  /* margin-top: 0px;
-  padding-top: 0px; */
-}
+/* .clients-list {
+  margin-top: 0px;
+  padding-top: 0px;
+} */
 
 .client-links .link:hover,
 .client-links .link:focus {
@@ -399,9 +399,8 @@ p {
 
 /* Footer */
 
-
 /* Button */
 .button {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
-} */
+}

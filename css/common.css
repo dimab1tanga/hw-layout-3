@@ -51,7 +51,7 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 3px solid tomato;
+  /* outline: 3px solid tomato; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
@@ -62,7 +62,7 @@ ul {
 
 .site-nav {
   display: flex;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
   margin-left: 85px;
 }
 
