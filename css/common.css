@@ -25,6 +25,7 @@
 
 .header {
   background-color: var(--secondary-bgd-color);
+  /* outline: 2px solid tomato; */
   margin-bottom: 0px;
 }
 
@@ -55,7 +56,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
 }
 
 /* Site nav */
@@ -69,8 +70,7 @@ ul {
 .site-nav .item + .item {
   margin-left: 50px;
 }
-.site-nav .link,
-.contacts-link {
+.site-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -78,8 +78,19 @@ ul {
   text-decoration: none;
 }
 
+.link {
+  display: block;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
   color: var(--accent-color);
 }
 
@@ -96,25 +107,51 @@ ul {
   margin-left: 30px;
 }
 
-.auth-nav .contacts-link:hover,
-.auth-nav .contacts-link:focus {
-  color: var(--accent-color);
-}
-.site-nav .link.current {
+.auth-nav .contacts:hover,
+.auth-nav .contacts:focus {
   color: var(--accent-color);
 }
 
-.contacts-link {
+.contacts-list {
   min-width: 130px;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
-.link {
-  display: block;
+.link-mail {
+  display: inline-flex;
+  align-items: center;
+  color: var(--secondary-text-color);
   text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
+}
+
+.link-mail::before {
+  content: "";
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  background-image: url(../images/envelope.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.link-tel {
+  display: inline-flex;
+  align-items: center;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.link-tel::before {
+  content: "";
+  width: 10px;
+  height: 14.94px;
+  margin-right: 10px;
+  background-image: url(../images/smartphone.svg);
 }
 
 /* Footer */
@@ -189,35 +226,93 @@ ul {
 }
 
 .social-box {
+  justify-content: space-evenly;
   /* outline: 1px solid brown; */
   margin-right: 94px;
   margin-left: 69px;
 }
 
-.social-links {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 0px;
-  margin-bottom: 0px;
+.link-social {
+  display: inline-flex;
+  margin-top: 21px;
+}
+
+.icon-instagram {
+  height: 44px;
+  width: 44px;
+  background-image: url(../images/instagram1.svg);
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+}
+
+.icon-twitter {
+  height: 44px;
+  width: 44px;
+  background-image: url(../images/twitter1.svg);
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.icon-facebook {
+  height: 44px;
+  width: 44px;
+  background-image: url(../images/facebook1.svg);
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.icon-linkedin {
+  height: 44px;
+  width: 44px;
+  background-image: url(../images/linkedin1.svg);
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  margin-left: 10px;
 }
 
 .usually-hidden {
   display: none;
 }
 
-.social-links .link:hover,
-.social-links .link:focus {
-  color: var(--accent-color);
+.social-list .link-item:hover {
+  background-color: var(--accent-color);
 }
 
 .sign-up {
+  display: inline-flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
   background-color: var(--accent-color);
   color: var(--title-text-color);
   text-decoration: none;
   font-weight: 900;
-  padding: 10px 35px;
+  padding: 10px;
+  padding-left: 29px;
   text-align: center;
   border-radius: 4px;
+  margin-left: 12px;
+}
+
+.sign-up::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  padding-right: 28px;
+  background-image: url(../images/airplane.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .border-bottom {
@@ -228,14 +323,15 @@ ul {
   margin-right: auto;
 }
 
-.goit {
+.copyright {
   color: rgba(255, 255, 255, 0.4);
   font-family: roboto, cursive;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   text-align: center;
-  margin-bottom: 21px;
+  padding-top: 18px;
+  padding-bottom: 21px;
 }
 
 /* Button */

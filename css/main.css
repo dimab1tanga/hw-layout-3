@@ -53,8 +53,7 @@ ul {
 /* колір акценту #2196F3 */
 
 /* Site nav */
-.site-nav .link,
-.contacts-link {
+.site-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -76,27 +75,45 @@ ul {
   color: var(--accent-color);
 }
 
-.container {
-  margin-top: 0px;
-}
-
 /* Hero */
+
+/* width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8)),
+    url(../images/Hero.jpg);
+  background-position: center;
+  background-size: cover; */
+
 .hero {
   background-color: rgba(47, 48, 58, 0.8);
-  /* height: 600px; */
   margin-top: 0px;
   margin-bottom: 6px;
   text-align: center;
   /* outline: 3px solid orchid; */
 }
+
+.overlay {
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .hero-title {
-  /* margin-bottom: 46px; */
-  margin-top: 0px;
-  margin-bottom: 0px;
   padding-top: 200px;
-  padding-right: 477px;
-  padding-bottom: 46px;
-  padding-left: 477px;
+  margin-top: 0px;
+  margin-bottom: 46px;
+
   /* background-color: green; */
   /* outline: 3px solid green; */
   color: var(--title-text-color);
@@ -104,6 +121,7 @@ ul {
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
+  text-align: center;
 }
 .order-service {
   display: inline-block;
@@ -147,22 +165,60 @@ ul {
 }
 
 .features-list {
-  display: flex;
+  display: inline-flex;
   /* margin-top: 94px; */
+}
+
+.icon-antena::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  outline: 1px solid tomato;
+  background-image: url(../images/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.icon-clock::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  outline: 1px solid tomato;
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.icon-diagram::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  outline: 1px solid tomato;
+  background-image: url(../images/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.icon-astronaut::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  outline: 1px solid tomato;
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
 }
 
 .features-list .list-element + .list-element {
   margin-left: 30px;
-}
-
-.picture {
-  padding: 25px 100px;
-}
-
-.fone {
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  /* width: 270px; */
 }
 
 h3,
@@ -187,14 +243,14 @@ p {
   padding-top: 94px;
 } */
 
-.features-description {
+/* .features-description {
   color: #757575;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   padding-bottom: 0px;
   margin-bottom: 0px;
-}
+} */
 
 /* .features-description-item {
   padding-bottom: 0px;
@@ -281,7 +337,7 @@ p {
 /* Team */
 .team {
   background-color: #f5f4fa;
-  outline: 3px solid teal;
+  /* outline: 3px solid teal; */
   margin-top: 0px;
   padding-top: 0px;
   margin-bottom: 6px;
